@@ -5,11 +5,7 @@
     <tr>
         <th>ID</th>
         <th>Name</th>
-        <th>Type</th>
         <th>Price</th>
-        <th>Amount</th>
-        <th>Date</th>
-        <th>Description</th>
         <th colspan="4">Action</th>
     </tr>
     </thead>
@@ -19,11 +15,7 @@
         <tr>
             <td><?php echo $key + 1?></td>
             <td><?php echo $product->name?></td>
-            <td><?php echo $product->type?></td>
             <td><?php echo $product->price?></td>
-            <td><?php echo $product->amount?></td>
-            <td><?php echo $product->date?></td>
-            <td><?php echo $product->description?></td>
             <td>
                 <a href="index.php?page=product-detail&id=<?php echo $product->id?>" class="btn btn-success"> Detail</a>
                 <a onclick="return confirm('Are you sure?')" href="index.php?page=product-delete&id=<?php echo $product->id ?>" class="btn btn-danger">Delete</a>
