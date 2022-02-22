@@ -6,8 +6,8 @@
         <th>ID</th>
         <th>Name</th>
         <th>Type</th>
-        <th>Amount</th>
         <th>Price</th>
+        <th>Amount</th>
         <th>Date</th>
         <th>Description</th>
         <th colspan="4">Action</th>

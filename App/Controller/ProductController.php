@@ -47,7 +47,7 @@ class ProductController
             include "App/View/product/edit.php";
         }
         else{
-            $this->product->updateProduct($_GET["id"], $_POST);
+            $this->product->updateProduct($_GET["id"],$_POST);
             header("location:index.php?page=product-list");
         }
     }
