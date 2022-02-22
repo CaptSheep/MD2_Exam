@@ -1,5 +1,5 @@
 <form method="post">
-    <div>
+    <div style="text-align: center">
         CREATE PRODUCTS
     </div>
     <div class="form-group">

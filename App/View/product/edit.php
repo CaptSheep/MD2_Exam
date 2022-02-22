@@ -1,4 +1,7 @@
 <form method="post">
+    <div style="text-align: center">
+        EDIT PRODUCT
+    </div>
     <div class="form-group">
         <label >Name</label>
         <input type="text" class="form-control" value="<?php echo $products->name ?>" name="name">
