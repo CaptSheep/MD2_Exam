@@ -20,7 +20,7 @@
     </div>
     <div class="form-group">
         <label >Date</label>
-        <input type="date" class="form-control" value="<?php echo $products->date ?>" name="date">
+        <input type="date" class="form-control" value="<?php echo date_format($products->date,'d/m/Y') ?>" name="date">
     </div>
     <div class="form-group">
         <label>Description</label>

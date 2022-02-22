@@ -1,4 +1,4 @@
-<a href="index.php?page=product-create">Create Product</a>
+<a href="index.php?page=product-create" class="btn btn-primary" >Create Product</a>
 <div class="container">
 <table border="1" style="text-align: center">
     <thead>
@@ -25,9 +25,9 @@
             <td><?php echo $product->date?></td>
             <td><?php echo $product->description?></td>
             <td>
-                <a href="index.php?page=product-detail&id=<?php echo $product->id?>"> Detail</a>
-                <a onclick="return confirm('Are you sure?')"><a href="index.php?page=product-delete&id=<?php echo $product->id ?>">Delete</a></a>
-                <a href="index.php?page=product-edit&id=<?php echo $product->id ?>">Edit</a>
+                <a href="index.php?page=product-detail&id=<?php echo $product->id?>" class="btn btn-success"> Detail</a>
+                <a onclick="return confirm('Are you sure?')" href="index.php?page=product-delete&id=<?php echo $product->id ?>" class="btn btn-danger">Delete</a>
+                <a href="index.php?page=product-edit&id=<?php echo $product->id ?>" class="btn btn-info">Edit</a>
             </td>
         </tr>
     <?php endforeach;?>
