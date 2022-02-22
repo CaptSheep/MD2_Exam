@@ -79,6 +79,6 @@ switch ($page){
         $product->deleteProduct($_REQUEST["id"]);
     break;
     case "product-edit":
-        $product->editProduct($_POST,$_REQUEST["id"]);
+        $product->editProduct();
         break;
 }

@@ -40,14 +40,14 @@ class ProductController
         header("location:index.php?page=product-list");
     }
 
-    public function editProduct($request,$id)
+    public function editProduct()
     {
         if($_SERVER["REQUEST_METHOD"] == "GET"){
-            $this->product->getById($_GET["id"]);
+            $products =$this->product->getById($_REQUEST["id"]);
             include "App/View/product/edit.php";
         }
         else{
-            $this->product->updateProduct($request,$id);
+            $this->product->updateProduct($_GET["id"], $_POST);
             header("location:index.php?page=product-list");
         }
     }

@@ -1,4 +1,7 @@
 <form method="post">
+    <div>
+        CREATE PRODUCTS
+    </div>
     <div class="form-group">
         <label >Name</label>
         <input type="text" class="form-control" name="name">
