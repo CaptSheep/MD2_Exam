@@ -22,9 +22,9 @@ class ProductController
         include "App/View/product/create.php";
     }
 
-    public function createProduct($request)
+    public function createProduct()
     {
-        $this->product->createProduct($request);
+        $this->product->createProduct($_POST);
         header("location:index.php?page=product-list");
     }
 

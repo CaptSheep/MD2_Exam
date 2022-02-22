@@ -8,11 +8,11 @@
         <input type="text" class="form-control" value="<?php echo $products->type ?>">
     </div>
     <div class="form-group">
-        <label >Price</label>
+        <label >Amount</label>
         <input type="text" class="form-control" value="<?php echo $products->price ?>">
     </div>
     <div class="form-group">
-        <label >Amount</label>
+        <label >Price</label>
         <input type="text" class="form-control" value="<?php echo $products->amount ?>">
     </div>
     <div class="form-group">
